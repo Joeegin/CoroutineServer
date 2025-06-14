@@ -20,10 +20,14 @@ add_executable(clion main.cpp
         CServer.cpp
         CServer.h
         CSession.cpp
-        CSession.h)
+        CSession.h
+        LogicSystem.cpp
+        LogicSystem.h
+        )
 
 # 链接库
 target_link_libraries(clion
         ${Boost_LIBRARIES}
         ${JSONCPP_LIBRARIES}
+        jsoncpp_lib
 )
